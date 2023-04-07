@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User } = require('../models');
+const { User, Comment } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -13,14 +13,14 @@ const resolvers = {
             path: 'orders.products',
             populate: 'category'
           });
-  
           user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
-  
           return user;
         }
-  
         throw new AuthenticationError('Not logged in');
       },
+      getComments: async () => {
+        return await Comment.find();
+      }
   },
   Mutation: {
     addUser: async (parent, args) => {
@@ -45,6 +45,10 @@ const resolvers = {
         }
         const token = signToken(user);
         return { token, user };
+      },
+      insertComment: async (parent, args) => {
+        const comment = await Comment.create(args);
+        return {comment}
       }
   }
   
