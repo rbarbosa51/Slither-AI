@@ -1,6 +1,6 @@
 import React from "react";
 
-import "sass/about.scss";
+import "./sass/About.scss";
 
 
 export default function About() {

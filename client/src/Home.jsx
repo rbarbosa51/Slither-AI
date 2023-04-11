@@ -1,5 +1,5 @@
 import React from "react";
-import auth from "auth";
+import auth from "./utils/auth";
 import { ADD_USER_MUTATION, COMMENT_MUTATION } from "./utils/mutations";
 import { COMMENTS_QUERY, USER_QUERY } from "./utils/queries";
 
