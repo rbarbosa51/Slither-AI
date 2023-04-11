@@ -11,7 +11,10 @@ import './sass/App.scss';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import Home from './Home';
-import About from './About';
+import About from './pages/About';
+import Instructions from './pages/Instructions'
+import Game from './pages/Game'
+import Comments from './pages/Comments'
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -41,10 +44,10 @@ function App() {
         <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            {/* <Route path="/game" element={<Game />} /> */}
-            {/* <Route path="/instructions" element={<Instructions />} /> */}
-            {/* <Route path="/comments" element={<Comments />} /> */}
+            <Route path="/About" element={<About />} />
+            <Route path="/Game" element={<Game />} />
+            <Route path="/Instructions" element={<Instructions />} />
+            <Route path="/Comments" element={<Comments />} />
           </Routes>
           <Footer />
       </Router>
