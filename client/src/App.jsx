@@ -8,6 +8,13 @@ function App() {
   return (
     <>
       <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/game" element={<Game />} />
+        <Route path="/instructions" element={<Instructions />} />
+        <Route path="/comments" element={<Comments />} />
+      </Routes>
       <Footer />
     </>
   );
