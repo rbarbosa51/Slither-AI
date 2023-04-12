@@ -8,7 +8,7 @@ header {
     padding: 5px;
     h1 {
         color: $text-dark;
-        font-size: 3rem;
+        font-size: $font-size-large;
         margin: 10px;
         padding: 5px;
     }
@@ -16,7 +16,7 @@ header {
         display: flex;
         justify-content: right;
         .linkBtn {
-            font-size: 1.25rem;
+            font-size: $font-size-medium;
             color: $text-dark;
             margin: 10px;
             padding: 5px 10px ;

@@ -1,5 +1,5 @@
 /*Global Variables go here */ 
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 $background-color: #f6f9f1;
 $light-green: #EDF1D6; 
 $bright-green: #9DC08B;
@@ -7,4 +7,12 @@ $medium-green: #609966;
 $dark-green: #40513B;
 $red: #a72608;
 $text-dark: #090c02;
+$font-size-large:  calc(2rem + 2vw);
+$font-size-medium: calc(.75rem + 1vw);
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+};
+
 
