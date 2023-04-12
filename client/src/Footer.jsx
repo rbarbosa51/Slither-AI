@@ -6,8 +6,8 @@ export default function Footer({description}) {
 
     return (
         <>
-Share on: 
-    <div  className="share-icon-collections">
+        Share on: 
+    <div  className="footer">
     {/* Facebook */}
     {/* The size of the icons can be changed in the css, under Share.css. */}
     {/* Instead of css you add style={{width:x}}, before Viewbox */}

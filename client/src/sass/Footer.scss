@@ -1,1 +1,12 @@
 @import 'Global';
+.footer {
+    background-color: $medium-green;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    height: 75px;
+    margin-top: 650px;
+}
