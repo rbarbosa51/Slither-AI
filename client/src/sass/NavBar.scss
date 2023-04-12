@@ -1,1 +1,34 @@
 @import 'Global';
+header {
+    background-color: $medium-green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    h1 {
+        color: $text-dark;
+        font-size: 3rem;
+        margin: 10px;
+        padding: 5px;
+    }
+    nav {
+        display: flex;
+        justify-content: right;
+        .linkBtn {
+            font-size: 1.25rem;
+            color: $text-dark;
+            margin: 10px;
+            padding: 5px 10px ;
+            background-color: $light-green;
+            border: 1px solid $medium-green;
+            border-radius: 5px;
+            text-decoration: none;
+            
+        }
+        .linkBtn:hover {
+            background-color: $bright-green;
+            border: 1px solid $dark-green;
+        }
+    }
+}

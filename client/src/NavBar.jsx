@@ -11,16 +11,16 @@ export default function NavBar() {
             {/* <img src={testImage} alt="" /> */}
             {/*Add React Router links, Context etc */}
             <nav>
-            <Link className="" to="/Instructions">
+            <Link className="linkBtn" to="/Instructions">
                 Instructions
             </Link>
-            <Link className="" to="/Game">
+            <Link className="linkBtn" to="/Game">
                 Main Game
             </Link>
-            <Link className="" to="/Comments">
+            <Link className="linkBtn" to="/Comments">
                 Comments
             </Link>
-            <Link className="" to="/About">
+            <Link className="linkBtn" to="/About">
                 About Us
             </Link>
             </nav>
