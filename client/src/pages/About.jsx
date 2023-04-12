@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../sass/About.scss";
+import imgAmy from "../assets/amy.png";
 
 
 export default function About() {
@@ -10,6 +11,7 @@ export default function About() {
       <p>
         We are so excited to share this project with you. Get to know us!
       </p>
+      <img src={imgAmy} />
       <h1>Amy</h1>
       <p>
       Hey hey! My name is Amy McKellar and I am a Natural Resource Specialist at Texas Commission on Environmental Quality. I love everything outdoors and spending time in nature. I enjoy learning new things and challenging myself.
