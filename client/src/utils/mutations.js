@@ -2,9 +2,9 @@ import { gql } from "@apollo/client";
 export const COMMENT_MUTATION = gql`
 mutation Mutation($name: String!, $email: String!, $comment: String!) {
     insertComment(name: $name, email: $email, comment: $comment) {
-        comment
-        email
         name
+        email
+        comment
     }
   }
 `;
