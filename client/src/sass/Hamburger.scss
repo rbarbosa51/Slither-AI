@@ -1,0 +1,23 @@
+@import 'Global';
+
+.hamburger{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+    margin: 10px;
+    padding: 5px 10px ;
+    background-color: $light-green;
+    border: 1px solid $medium-green;
+    border-radius: 5px;
+    .burger{
+        width: 2rem;
+        height: 0.25rem;
+        border-radius: 10px;
+        background-color: black;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+    }
+}
