@@ -1,5 +1,3 @@
-//Alex this is placeholder text
-
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
@@ -23,13 +21,11 @@ const typeDefs = gql`
   }
 
   type Query {
-    users: [User]
     user: User
     getComments: [Comment]
   }
   type Mutation {
     addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
     login(email: String!, password: String!): Auth
     insertComment(name: String!, email: String!, comment: String!): Comment
   }

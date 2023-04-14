@@ -14,7 +14,8 @@ import Home from './Home';
 import About from './pages/About';
 import Instructions from './pages/Instructions'
 import Game from './pages/Game'
-import Comments from './pages/Comments'
+import Comments from './pages/Comments';
+import Login from './pages/Login';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -43,6 +44,7 @@ function App() {
       <Router>
         <NavBar />
           <Routes>
+            <Route path="/Login" element={<Login />} />
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Game" element={<Game />} />
