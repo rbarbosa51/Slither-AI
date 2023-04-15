@@ -4,14 +4,19 @@ import testImage from './assets/testImage.png';
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import Hamburger from "./Hamburger";
 import { useState } from "react";
+import Auth from "./utils/auth";
 
 
 export default function NavBar() {
+    const logout = (event) => {
+        event.preventDefault();
+        Auth.logout();
+    };
+
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const toggleHamburger = () => {
         setHamburgerOpen(!hamburgerOpen);
-        console.log (hamburgerOpen);
         var tgt = document.getElementById("dropdown");
         if (tgt.classList.contains('drop')) {
             tgt.classList.add('hide');
@@ -42,6 +47,23 @@ export default function NavBar() {
                     <Link className="linkBtn" to="/About">
                         About Us
                     </Link>
+                    <div>
+                        {Auth.loggedIn() ? (
+                            <>
+                                <button className="linkBtn" onClick={logout}> 
+                                    Logout
+                                </button>
+                                
+                            </>
+                        ) : (
+                            <>
+                                <Link className="linkBtn" to="/Login">
+                                    Login/SignUp
+                                </Link>
+                            </>
+                        )
+                    }
+                    </div>
                     
                 </div>
                 <div className="borgir" onClick={toggleHamburger}>
