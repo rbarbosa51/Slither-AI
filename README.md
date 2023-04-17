@@ -1,1 +1,1 @@
-echo # Slither-AI
+# Slither-AI

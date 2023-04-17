@@ -1,0 +1,40 @@
+@import "Global";
+
+.game {
+    //outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    details {
+      margin-bottom: 0.6rem;
+    }
+    .gameBox {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      // outline: 1px solid red;
+      padding: 1rem;
+      canvas {
+        display: inline;
+        border: 1px solid rgba($color: #000, $alpha: 0.3);
+      }
+      .displayParams {
+        width: 300px;
+        align-self: baseline;
+        label {
+          font-weight: bold;
+          font-size: 2rem;
+        }
+        button {
+          margin: 2rem 1rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  

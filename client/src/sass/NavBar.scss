@@ -11,53 +11,64 @@ header {
         font-size: $font-size-large;
         margin: 10px;
         padding: 5px;
+        .homeBtn{
+            color: $text-dark;
+            text-decoration: none;
+        }
+        .homeBtn:hover {
+            background-color: $bright-green;
+            border-radius: 5px;
+        }
     }
     nav {
         display: flex;
         justify-content: right;
-            .linkBtn {
-                font-size: $font-size-medium;
-                color: $text-dark;
-                margin: 10px;
-                padding: 5px 10px ;
-                background-color: $light-green;
-                border: 1px solid $medium-green;
-                border-radius: 5px;
-                text-decoration: none;
-                
-            }
-            .linkBtn:hover {
-                background-color: $bright-green;
-                border: 1px solid $dark-green;
-            }
-            .borgir {
-                display: none;
-            }
-            .borgir:hover {
-                background-color: $bright-green;
-                border: 1px solid $dark-green;
-                border-radius: 5px;
-            }
-            @media (max-width: 900px) {
-                .borgir {
-                    display: initial;
-                }
-                .linkBtn {
-                    display: none;
-                }
-                .drop {
-                    display: inline;
-                    background-color: $dark-green;
-                    width: 40vw;
-                    margin-top: 8vh;
-                    position: absolute;
-                    border-radius: 5px;
+            #dropdown {
+                display: contents;
                     .linkBtn {
-                        display: flex;
+                        font-size: $font-size-medium;
+                        color: $text-dark;
+                        margin: 10px;
+                        padding: 5px 10px ;
+                        background-color: $light-green;
+                        border: 1px solid $medium-green;
+                        border-radius: 5px;
+                        text-decoration: none;
                         
                     }
-                }
+                    .linkBtn:hover {
+                        background-color: $bright-green;
+                        border: 1px solid $dark-green;
+                    }
             }
+                .borgir {
+                    display: none;
+                }
+                .borgir:hover {
+                    background-color: $bright-green;
+                    border: 1px solid $dark-green;
+                    border-radius: 5px;
+                }
+                @media (max-width: 1028px) {
+                    .borgir {
+                        display: initial;
+                    }
+                    .linkBtn {
+                        display: none;
+                    }
+                    .drop {
+                        display: inline;
+                        background-color: $dark-green;
+                        width: 40vw;
+                        margin-top: 8vh;
+                        position: absolute;
+                        border-radius: 5px;
+                        .linkBtn {
+                            display: flex;
+                            
+                        }
+                    }
+                }
             
         }
     }

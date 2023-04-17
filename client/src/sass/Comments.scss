@@ -1,1 +1,76 @@
 @import 'Global';
+
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    border: 100px;
+    border-color: black;
+    // background-color: yellow;
+
+    .form {
+        // background-color: red;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        color: $medium-green;
+        font-size: 1.5rem;
+
+        
+        .name-input {
+            width: 500px;
+            height: 30px;
+            border-color: $medium-green;  
+            border-radius: 10px;  
+            border-width: 3px;
+            background-color: rgb(243, 234, 234);  
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+        .email-input{
+            height: 30px;
+            width: 500px;
+            border-color: $medium-green;  
+            border-radius: 10px;          
+            border-width: 3px;
+            background-color: rgb(243, 234, 234);  
+            font-size: 1.15rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .comment-input {
+            height: 150px;
+            padding: 10px;
+            width: 500px;
+            border-color: $medium-green;  
+            border-radius: 10px;          
+            border-width: 3px;
+            background-color: rgb(243, 234, 234);  
+            font-size: 1.25rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .submit-btn {
+            background-color: $medium-green;
+            padding: 10px;
+            width: 100px;
+            margin-top: 5px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            color: black;
+
+            :hover {
+                background-color: blue;
+            }
+        }
+
+    }
+}
+
+
+
+
+
