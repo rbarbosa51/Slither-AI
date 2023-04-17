@@ -1,0 +1,19 @@
+{
+    "commentCanvas": "These are <canvas> settings",
+  
+    "canvasBackgroundColor": "white",
+    "canvasSquare": 500,
+    "cellSize": 50,
+    "gameSpeed": 5,
+  
+    "commentML": "These settings correlate to Reinforcement Learning",
+    "learningRate": 0.1,
+    "Gamma": 1,
+    "rewardFood": 100,
+    "punDeath": -100,
+    "rewardTowardsFood": 5,
+  
+    "commentMisc": "These are miscelaneous game settings",
+    "SnakeInitLength": 2
+  }
+  
