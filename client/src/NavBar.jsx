@@ -30,35 +30,23 @@ export default function NavBar() {
 
     return (
         <header>
-            <h1>
-                <Link className="homeBtn" to="/">
-                        SlitherAI
-                </Link>
-            </h1>
+            <h1>SlitherAI</h1>
             {/* <img src={testImage} alt="" /> */}
             {/*Add React Router links, Context etc */}
-            <nav> 
+            <nav>
                 <div id="dropdown">
-                    <div> 
-                        <Link className="linkBtn" to="/Instructions">
+                    <Link className="linkBtn" to="/Instructions">
                         Instructions
-                        </Link> 
-                    </div>
-                    <div>
-                        <Link className="linkBtn" to="/Game">
+                    </Link>
+                    <Link className="linkBtn" to="/Game">
                         Main Game
-                        </Link>
-                    </div>
-                    <div>
-                        <Link className="linkBtn" to="/Comments">
+                    </Link>
+                    <Link className="linkBtn" to="/Comments">
                         Comments
-                        </Link>
-                    </div>
-                    <div>
-                        <Link className="linkBtn" to="/About">
+                    </Link>
+                    <Link className="linkBtn" to="/About">
                         About Us
-                        </Link>
-                    </div>
+                    </Link>
                     <div>
                         {Auth.loggedIn() ? (
                             <>
