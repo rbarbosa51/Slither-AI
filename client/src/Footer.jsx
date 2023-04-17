@@ -6,7 +6,7 @@ export default function Footer({description}) {
 
     return (
         <>
-        Share on: 
+        {/* Share on:  */}
     <div  className="footer">
     
     {/* The size of the icons can be changed in the css, under Share.css. */}

@@ -2,15 +2,16 @@ import { gql } from "@apollo/client";
 export const COMMENT_MUTATION = gql`
 mutation Mutation($name: String!, $email: String!, $comment: String!) {
     insertComment(name: $name, email: $email, comment: $comment) {
-        comment
-        email
         name
+        email
+        comment
     }
   }
 `;
 export const LOGIN_MUTATION = gql`
 mutation Login($email: String!, $password: String!) {
     login(email: $email, password: $password) {
+      token
       user {
         firstName
         email
