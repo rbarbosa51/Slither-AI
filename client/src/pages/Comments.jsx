@@ -37,14 +37,15 @@ export default function Comment() {
     });
   }
 
+  // Added classNames to the labels and form
   return (
     <div className="comment">
       <h1>Submit Comments</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name</label><input name="name" value={formData.name} type="text" onChange={handleChange}></input>
-        <label>Email</label><input  name="email" type="text" value={formData.email} onChange={handleChange}></input><br />
-        <label>Comment</label><input name="comment" type="text" value={formData.comment} onChange={handleChange} size={100}></input>
-        <button type="submit">Submit</button>
+      <form className="form" onSubmit={handleSubmit}>
+        <label htmlFor="name">Name</label><input className="name-input" name="name" value={formData.name} type="text" onChange={handleChange}></input>
+        <label>Email</label><input className="email-input" name="email" type="text" value={formData.email} onChange={handleChange}></input><br />
+        <label>Comment</label><input className="comment-input" name="comment" type="text" value={formData.comment} onChange={handleChange} size={100}></input>
+        <button className="submit-btn" type="submit">Post</button>
       </form>
       
       <h2>Comments Section</h2>
